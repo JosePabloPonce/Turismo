@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmento1">
+
+    <fragment
+        android:id="@+id/fragmento1"
+        android:name="com.example.turismo.Fragmento1"
+        android:label="fragment_fragmento1"
+        tools:layout="@layout/fragment_fragmento1" >
+        <action
+            android:id="@+id/action_fragmento1_to_fragmento2"
+            app:destination="@id/fragmento2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento2"
+        android:name="com.example.turismo.fragmento2"
+        android:label="fragment_fragmento2"
+        tools:layout="@layout/fragment_fragmento2" >
+        <argument
+            android:name="titulolugar"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+</navigation>

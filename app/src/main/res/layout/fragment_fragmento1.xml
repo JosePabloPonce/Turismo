@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    
+    <data>
+        
+        <variable
+            name="viewmodel"
+            type="com.example.turismo.MainActivity" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmento1">
+
+
+
+
+    <ImageView
+        android:id="@+id/principal"
+        android:layout_width="0dp"
+        android:layout_height="106dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="544dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_thin"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titulo" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="552dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="Nombre"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/estrella"
+        android:layout_width="50dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="604dp"
+        android:background="@android:drawable/btn_star_big_on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_thin"
+                android:text="La cultura de Guatemala y las costumbres de Guatemala están muy marcadas por la historia guatemalteca. Los guatemaltecos son en su mayoría mestizos de sangre española y maya, en tanto que algunos campesinos son descendientes puros de los mayas. La civilización maya, que habitó la Guatemala actual durante casi 600 años antes de su declive en el 900 d.C. , ha influido de forma determinante en la historia de Guatemala. La multiculturalidad inherente a la sociedad de Guatemala ha dejado su huella en las costumbres, la gastronomía y la población.  La cocina de Guatemala, por ejemplo, varía según la región. Con todo, muchos platos guatemaltecos están basados en la cocina maya, lo cual puede comprobarse en la abundante presencia de ingredientes como el maíz, el chile y los fríjoles. Algunas recetas populares son las enchiladas, las quesadillas y los tamales, aunque hay que tener cuidado de no confundirlos con sus homónimos mexicanos." />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/mostrar"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/roboto_thin"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/atitlan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="ATITLAN"
+        app:layout_constraintBottom_toTopOf="@+id/semuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/tikal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="TIKAL"
+        app:layout_constraintBottom_toTopOf="@+id/atitlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/semuc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="SEMUC CHAMPEY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
