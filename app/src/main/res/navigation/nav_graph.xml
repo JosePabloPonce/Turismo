@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_fragmento1_to_fragmento2"
             app:destination="@id/fragmento2" />
+        <action
+            android:id="@+id/action_fragmento1_to_acercade2"
+            app:destination="@id/acercade2" />
     </fragment>
     <fragment
         android:id="@+id/fragmento2"
@@ -21,6 +24,35 @@
         tools:layout="@layout/fragment_fragmento2" >
         <argument
             android:name="titulolugar"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="lemalugar"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="infolugar"
+            app:argType="string"
+            android:defaultValue="default" />
+        <action
+            android:id="@+id/action_fragmento2_to_acercade2"
+            app:destination="@id/acercade2" />
+        <action
+            android:id="@+id/action_fragmento2_to_comentariofragment"
+            app:destination="@id/comentariofragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acercade2"
+        android:name="com.example.turismo.acercade"
+        android:label="fragment_acercade"
+        tools:layout="@layout/fragment_acercade" />
+    <fragment
+        android:id="@+id/comentariofragment"
+        android:name="com.example.turismo.comentariofragment"
+        android:label="fragment_comentariofragment"
+        tools:layout="@layout/fragment_comentariofragment" >
+        <argument
+            android:name="comentariohecho"
             app:argType="string"
             android:defaultValue="default" />
     </fragment>
